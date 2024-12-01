@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Base Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container1">
+        <h1>Number Base Converter</h1>
+        <div class="form-group">
+            <label for="input-number">Enter Number:</label>
+            <input type="text" id="input-number" placeholder="e.g., 1010, 42, 2A">
+        </div>
+        <div class="form-group">
+            <label for="input-base">From Base:</label>
+            <select id="input-base">
+                <option value="2">Binary</option>
+                <option value="10" selected>Decimal</option>
+                <option value="8">Octal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+        </div>
+        <button id="convert-btn">Convert</button>
+    </div>
+    <div class="container2">
+        <div class="results">
+            <h2>Conversion Results</h2>
+            <p>Binary: <span id="binary-output"></span></p>
+            <p>Decimal: <span id="decimal-output"></span></p>
+            <p>Octal: <span id="octal-output"></span></p>
+            <p>Hexadecimal: <span id="hexadecimal-output"></span></p>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; Pranav ;)
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
