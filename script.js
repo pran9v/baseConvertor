@@ -6,6 +6,7 @@ document.getElementById('convert-btn').addEventListener('click', () => {
         if (!isValidNumber(inputNumber, inputBase)) {
             throw new Error(`Invalid number for base ${inputBase}.`);
         }
+        const decimalValue = parseInt(inputNumber, inputBase);
         // updating the results
         document.getElementById('binary-output').textContent = decimalValue.toString(2);
         document.getElementById('decimal-output').textContent = decimalValue.toString(10);
