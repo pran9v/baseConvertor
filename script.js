@@ -9,10 +9,10 @@ document.getElementById('convert-btn').addEventListener('click', () => {
         if (isNaN(valu)) throw new Error(`Invalid number for base ${inputBase}.`);
 
         // updating the results
-        document.getElementById('binary-output').textContent = decimalValue.toString(2);
-        document.getElementById('decimal-output').textContent = decimalValue.toString(10);
-        document.getElementById('octal-output').textContent = decimalValue.toString(8);
-        document.getElementById('hexadecimal-output').textContent = decimalValue.toString(16).toUpperCase();
+        document.getElementById('binary-output').textContent = valu.toString(2);
+        document.getElementById('decimal-output').textContent = valu.toString(10);
+        document.getElementById('octal-output').textContent = valu.toString(8);
+        document.getElementById('hexadecimal-output').textContent = valu.toString(16).toUpperCase();
     } catch (error) {
         alert(error.message);
         clearResults();
